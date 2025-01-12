@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 h-screen flex justify-center items-center">
+    <div class="bg-white w-full max-w-4xl rounded-lg shadow-lg text-black flex flex-col h-[85%]">
+        <!-- Header -->
+        <div class="bg-blue-700 w-full h-16 flex items-center px-4 rounded-t-lg">
+            <h2 class="text-2xl font-semibold text-white">Chatbot</h2>
+        </div>
+
+        <!-- Chat Box -->
+        <div class="chat-box space-y-4 overflow-y-auto flex-grow w-full bg-slate-100 p-6">
+            <!-- Bot Response -->
+            <div class="bot-response text-black bg-blue-100 rounded-lg px-4 py-2 self-start inline-block max-w-lg shadow-md">
+                {{ bot_response }}
+            </div>
+            
+            <!-- User Message -->
+            <div class="user-message text-white bg-blue-500 rounded-lg px-4 py-2 self-end inline-block max-w-lg ml-auto shadow-md">
+                {{ user_message }}
+            </div>
+        </div>
+
+        <!-- Input Form -->
+        <form action="/" method="POST" class="w-full bg-slate-100 p-4 flex gap-3 items-center rounded-b-lg shadow-inner">
+            <input 
+                type="text" 
+                name="user_message" 
+                placeholder="Type your message here..." 
+                value="{{ user_message }}"
+                required 
+                class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            <button 
+                type="submit" 
+                class="bg-blue-700 px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:bg-blue-800 transition">
+                Send
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
