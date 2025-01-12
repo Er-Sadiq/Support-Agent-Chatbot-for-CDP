@@ -114,13 +114,3 @@ Here are some screenshots of the app in action:
 
 - [@Er-Sadiq-Ahmed-Killear](https://github.com/Er-Sadiq/)
 ```
-
-### Key Sections in the README:
-1. **Project Overview**: Describes what the project does, its key features, and technologies used.
-2. **Installation Instructions**: Detailed steps on how to clone the repo, set up a virtual environment, and run the application.
-3. **Screenshots**: Includes demo images of the app's interface.
-4. **Author**: Provides the GitHub profile link of the project author.
-
-Feel free to update any sections (like the GitHub link in the clone command) based on your actual repository setup.
-
-Let me know if you need more adjustments or anything else!
