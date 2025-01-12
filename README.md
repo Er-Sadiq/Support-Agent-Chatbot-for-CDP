@@ -113,4 +113,3 @@ Here are some screenshots of the app in action:
 ## Authors
 
 - [@Er-Sadiq-Ahmed-Killear](https://github.com/Er-Sadiq/)
-```
