@@ -14,13 +14,13 @@ This project uses a Flask web framework and includes a scraping feature to gathe
     
 
 
-###  Setting up manually 
+##  Setting up manually 
 
 ```bash
 git clone https://github.com/your-username/Support-Agent-Chatbot-for-CDP.git
 cd Support-Agent-Chatbot-for-CDP
 window :- python -m venv env
-         .\env\Scripts\activate
+.\env\Scripts\activate
 ```
 
 or 
@@ -48,7 +48,7 @@ This will start the application, and you can access the chatbot locally in your 
 
 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-## Run with Docker, install docker then build and run 
+## Run with Docker, install docker then build and run ( setting up with docker is  recommended )
 
 ```bash
    docker build -t supportagent-cpd .
