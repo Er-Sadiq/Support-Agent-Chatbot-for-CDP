@@ -12,55 +12,29 @@ This project uses a Flask web framework and includes a scraping feature to gathe
   - Customer Support: The chatbot helps answer questions related to the usage of different CDPs and offers step-by-step instructions for setting up and managing customer data.
   - Dynamic Responses: Based on the user’s query, the bot responds with context-specific answers pulled from the scraped documentation.
     
-```markdown
-## Installation Instructions
 
-###  Clone the Repository & Navigate to the Project Directory
 
-Once the repository is cloned, navigate to the project folder:
+###  Setting up manually 
 
 ```bash
 git clone https://github.com/your-username/Support-Agent-Chatbot-for-CDP.git
 cd Support-Agent-Chatbot-for-CDP
+window :- python -m venv env
+         .\env\Scripts\activate
 ```
 
-###  Set Up a Virtual Environment (Optional but Recommended)
-
-It’s best to use a virtual environment to avoid conflicts with other Python projects on your system. To create a virtual environment, run the following command:
+or 
 
 ```bash
-python -m venv env
-```
-
-This will create a directory called `env` in the project folder that contains the virtual environment.
-
-###  Activate the Virtual Environment
-
-Now, activate the virtual environment:
-
-- **Windows:**
-
-```bash
-.\env\Scripts\activate
-```
-
-- **Linux or Mac:**
-
-```bash
+Linux :- python3 -m venv env
 source env/bin/activate
 ```
 
-When activated, your terminal prompt will change to indicate that you are inside the virtual environment.
-
-###  Install Required Dependencies
-
-With the virtual environment activated, install the required dependencies using `pip` by running the following command:
-
 ```bash
-pip install -r requirements.txt
+ windows :- pip install flask beautifulsoup4 requests  -q -U google-generativeai
+ linux :- pip3 install flask beautifulsoup4 requests  -q -U google-generativeai
 ```
 
-This will install all the necessary Python libraries needed for the project, including **Flask**, **BeautifulSoup**, and others.
 
 ### Run the Application
 
@@ -74,29 +48,12 @@ This will start the application, and you can access the chatbot locally in your 
 
 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-###  Reactivating the Virtual Environment (if needed)
-
-If you’ve closed your terminal and need to reactivate your virtual environment, follow these steps again:
-
-- **Windows:**
+## Run with Docker, install docker then build and run 
 
 ```bash
-.\env\Scripts\activate
+   docker build -t supportagent-cpd .
+   docker run -p 5000:5000 supportagent-cpd
 ```
-
-- **Linux or Mac:**
-
-```bash
-source env/bin/activate
-```
-
-Then, simply run the app:
-
-```bash
-python app.py
-```
-
----
 
 ## Screenshots / Demo
 
