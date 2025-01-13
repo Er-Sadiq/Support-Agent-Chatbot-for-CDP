@@ -16,14 +16,14 @@
         </div>
 
         <!-- Chat Box -->
-        <div class="chat-box space-y-4 overflow-y-auto flex-grow w-full bg-slate-100 p-6">
+        <div class="chat-box space-y-4 overflow-y-auto flex-grow w-full bg-slate-100 p-6 flex flex-col" id="chat-box">
             <!-- Bot Response -->
             <div class="bot-response text-black bg-blue-100 rounded-lg px-4 py-2 self-start inline-block max-w-lg shadow-md">
                 {{ bot_response }}
             </div>
-            
+
             <!-- User Message -->
-            <div class="user-message text-white bg-blue-500 rounded-lg px-4 py-2 self-end inline-block max-w-lg ml-auto shadow-md">
+            <div class="user-message text-white bg-blue-500 rounded-lg px-4 py-2 self-end ml-auto shadow-md max-w-lg">
                 {{ user_message }}
             </div>
         </div>
@@ -45,6 +45,12 @@
             </button>
         </form>
     </div>
+
+    <script>
+        // Scroll to the bottom of the chat box on new messages
+        const chatBox = document.getElementById('chat-box');
+        chatBox.scrollTop = chatBox.scrollHeight;
+    </script>
 </body>
 
 </html>
