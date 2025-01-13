@@ -27,7 +27,7 @@ def format_response(raw_text):
 def responser(userinput, file_path="data/cdp_docs.json"):
     try:
         
-        genai.configure(api_key="AIzaSyAgIcGdPcv7MgKmwDtTX8mCQns0QR4QXZI")
+        genai.configure(api_key="AIzaSyAXkfaIUjGLPKMIMLKzmwxjORyirzr7ing")
      
         model = genai.GenerativeModel("gemini-1.5-flash")
         
